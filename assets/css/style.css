@@ -1114,6 +1114,14 @@ footer {
   background-color: #f2385a;
 }
 
+@media screen and (max-width: 350px) {
+  .subscribe-form__btn {
+    width: 32%;
+    float: none;
+    margin-left: 12px;
+  }
+}
+
 .copyright {
   color: #a9a9a9;
   font-size: 12px;
@@ -1131,7 +1139,7 @@ footer {
 }
 
 .modal .modal-content {
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   position: absolute;
   left: 0;
@@ -1166,20 +1174,21 @@ footer {
   fill: #f2385a;
 }
 
+.modal-form__title {
+  margin-bottom: 10px;
+}
+
 .modal-form__field {
   width: 100%;
   margin-bottom: 10px;
   padding: 4px;
   border: 1px solid #9E9E9E;
+  background-color: #ccc;
 }
 
 .modal-form__field--big {
-  width: 100%;
   height: 100px;
-  margin-bottom: 10px;
   resize: vertical;
-  padding: 4px;
-  border: 1px solid #9E9E9E;
 }
 
 .modal-form__btn {

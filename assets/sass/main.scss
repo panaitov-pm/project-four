@@ -861,6 +861,12 @@ footer {
         padding-right: 0;
         float: right;
         background-color: $pink-color;
+        
+        @include max-width(350px) {
+            width: 32%;
+            float: none;
+            margin-left: 12px;
+        }
     }
 }
 
@@ -881,7 +887,7 @@ footer {
 }
 
 .modal .modal-content {
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     position: absolute;
     left: 0;
@@ -917,20 +923,21 @@ footer {
 
 .modal-form {
 
+    &__title {
+        margin-bottom: 10px;
+    }
+
     &__field {
         width: 100%;
         margin-bottom: 10px;
         padding: 4px;
         border: 1px solid #9E9E9E;
+        background-color: #ccc;
     }
 
     &__field--big {
-        width: 100%;
         height: 100px;
-        margin-bottom: 10px;
         resize: vertical;
-        padding: 4px;
-        border: 1px solid #9E9E9E;
     }
 
     &__btn {

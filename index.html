@@ -89,7 +89,7 @@
                 <h1 class="wow flipInX intro__title" data-wow-delay="0.2s">
                     <a href="index.html" class="head-logo">Logo</a>
                 </h1>
-                <a href="#portfolio" class="btn intro__btn">View photos portfolio</a>
+                <a href="#portfolio" class="btn intro__btn" data-target="nav-section">View photos portfolio</a>
             </div>
             <!-- END intro -->
         </div>
@@ -138,7 +138,7 @@
                 <h3 class="section-title portfolio__title">Portfolio</h3>
                 <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 </p>
-                <a href="#portfolio-gallery" class="btn portfolio__btn">View all portfolio</a>
+                <a href="#portfolio-gallery" class="btn portfolio__btn" data-target="nav-section">View all portfolio</a>
             </div>
             <!-- END container -->
             <div id="portfolio-gallery" class="portfolio-gallery">
@@ -259,7 +259,7 @@
                 <nav class="foot-navigation">
                     <ul class="foot-navigation__list">
                         <li class="foot-navigation__item">
-                            <a href="#index.html" class="foot-navigation__link">Home</a>
+                            <a href="index.html" class="foot-navigation__link">Home</a>
                         </li>
                         <li class="foot-navigation__item">
                             <a href="#portfolio" class="foot-navigation__link">Portfolio</a>
@@ -332,9 +332,10 @@
                     <use xlink:href="#close-icon" />
                 </svg>
             </a>
-            <h3 class="text-center">Contact Us</h3>
+            <h3 class="modal-form__title">Contact Me</h3>
             <form class="modal-form" action="#">
                 <input class="modal-form__field" placeholder="Enter Your Name" type="text" required>
+                <input class="modal-form__field" placeholder="Enter Your Email" type="email" required>
                 <textarea class="modal-form__field modal-form__field--big" placeholder="Enter Your Message" required></textarea>
                 <div class="text-center">
                     <button class="btn modal-form__btn" type="submit">Submit</button>
@@ -344,7 +345,7 @@
     </div>
     <div class="scroll-top">
         <div class="container relative">
-            <a class="scroll-top__link" href="#scroll-top">
+            <a class="scroll-top__link" href="#scroll-top" data-target="nav-section">
                 <svg class="scroll-top__icon">
                     <use xlink:href="#scroll-top-icon" />
                 </svg>
@@ -358,7 +359,7 @@
     <script src="assets/plugins/slick.min.js"></script>
     <script src="assets/plugins/wow.min.js"></script>
     <!-- endbuild -->
-    <!-- build:js assets/js/main.min.js -->
+    <!-- build:js assets/js/main.js -->
     <script src="assets/js/main.js"></script>
     <!-- endbuild -->
 </body>

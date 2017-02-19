@@ -36,19 +36,30 @@
 		}); // end slider
 
 		//Scroll page to need section
-		$(document).on('click', '.navigation__link, .intro__btn, .portfolio__btn, .scroll-top__link', function(event) {
+		$(document).on('click', '.foot-navigation__link, .navigation__link, [data-target="nav-section"]', function(event) {
 			event.preventDefault();
 
 			var elementId = $(this).attr('href');
 
 			if ( elementId.length > 2 ) {
 				var top = $(elementId).offset().top;
-			
-				$('body').animate({
-					scrollTop: top
-				}, 1200);
-			}
 
+				if ( $(event.target).attr('class') == 'navigation__link') {
+					
+					$body.removeClass('js-nav-open');
+					
+					setTimeout(function() {
+						$body.animate({
+							scrollTop: top
+						}, 1200);
+					}, 300);
+
+				} else {
+					$body.animate({
+						scrollTop: top
+					}, 1200);
+				}
+			}
 		});// end click
 
 		$(document).on('click', '.menu-toggle', function(event) {
